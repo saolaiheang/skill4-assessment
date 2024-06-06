@@ -98,3 +98,23 @@ let books = [
     },
   },
 ];
+for(let i=0 ;i<books.length; i++) {
+  
+      const card=document.getElementById('books').innerHTML += `
+  
+      <div class="book">
+            <div class="book-image">
+                <img src="${books[i].imageUrls.large}">
+            </div>
+            <div class="book-info">
+                <p>${books[i].isbn}</p>
+                <p>${books[i].bookTitle}</p>
+                <p>${books[i].bookAuthor}</p>
+                <p>${books[i].yearOfPublication}</p>
+            </div>
+        </div>
+      `
+    
+    
+  
+}
